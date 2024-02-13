@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <style>
+        #grad1 {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border-radius: 50%;
+            background-image: repeating-conic-gradient(violet 0deg , indigo 10deg, blue 20deg, green 30deg, yellow 40deg, orange 50deg, red 60deg);
+        }
+        div{
+            position: relative;
+            top: 200px;
+            left: 315px;
+            width: 100px;
+            height: 100px;
+            animation-name: circle;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            z-index: 1;
+        }
+        @keyframes circle{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        
+        }
+        .stick{
+            position: absolute;
+            left: 360px;
+            bottom: 338px;
+            background-color: brown;
+            height: 120px;
+            width: 5px;
+            transform: rotate(10deg);
+        }
+    </style>
+
+<body>
+    
+    <div id="grad1"></div>
+    <img src="./cycling gif.gif" width="500px" height="500px">
+    <div1 class="stick"></div>
+
+</body>
+</head>
+
+</html>
